@@ -1,0 +1,20 @@
+@import "abstracts/variables";
+@import "abstracts/extends";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/carousels";
+
+@import "layouts/header";
+@import "layouts/contentCreatorHome";
+@import "layouts/blogHome";
+@import "layouts/about-Home";
+@import "layouts/footer";
+@import "layouts/forms";
+@import "layouts/hero-Home";
+
+@import "pages/home";

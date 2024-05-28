@@ -1,0 +1,56 @@
+.about {
+  display: grid;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: $color-grey-dark;
+  line-height: 1.7;
+  grid-template-columns: .3fr repeat(3, 1fr) .3fr;
+  //background: linear-gradient(to bottom, rgba($color-primary, 0.96), rgba($color-secondary, .98));
+  //background-size: cover;
+  padding: 8rem 0;
+
+  &__text {
+    margin-top: 2rem;
+    text-align: center;
+    grid-column: 2/5;
+
+  }
+
+  &__box {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-top: 3rem;
+
+
+    & > * {
+      //border: 3px solid $color-primary;
+      background: $color-white;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      color: $color-primary;
+      text-align: center;
+    }
+    &--1 {
+
+    }
+    &--2 {
+
+    }
+    &--3 {
+
+    }
+  }
+
+
+}
+
+.hoverBox {
+  transition: all .2s;
+}
+
+.hoverBox:hover {
+  transform: scale(1.01) translateY(-8px);
+  box-shadow: 2px 12px 28px 2rem rgba(0, 0, 0, 0.3);
+}

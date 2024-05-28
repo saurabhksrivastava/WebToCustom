@@ -1,0 +1,31 @@
+.btn-main {
+  background: #0149CC; /* Old browsers */
+  background: -moz-linear-gradient(left, #0149CC 0%, #00C6FF 50%, #0149CC 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #0149CC 0%, #00C6FF 50%, #0149CC 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #0149CC 0%, #00C6FF 50%, #0149CC 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0149CC', endColorstr='#0149CC', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 50rem;
+  align-self: center;
+  justify-self: center;
+
+  display: inline-block !important;
+  padding: 1.6rem 4rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.35s ease, background-position 0.3s ease-in-out,
+  background-color 0.35s ease, box-shadow 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  background-size: 200% 100%;
+  background-position: 0 0;
+
+  &:hover {
+    box-shadow: -0.25em 0.25em 2.25em rgba(0, 0, 0, 0.35);
+    background-position: 100% 100%;
+  }
+}

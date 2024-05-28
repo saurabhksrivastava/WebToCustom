@@ -1,0 +1,39 @@
+.blogShort {
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: .3fr repeat(3, 1fr) .3fr;
+
+
+  &__title {
+    grid-column: 2/5;
+    //text-align: center;
+  }
+
+
+  &__box {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+
+    &>* {
+      padding: 1.44rem 2rem;
+      border-radius: 1rem;
+      border: 2px solid $color-white;
+      background-color: rgba($color-black, 0.3);
+      backdrop-filter: blur(2px);
+    }
+
+    &--1 {
+
+
+    }
+
+
+    }
+
+  &__img {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+}

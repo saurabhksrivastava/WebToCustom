@@ -1,0 +1,41 @@
+
+/* Basic Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 1.2rem;
+  /* Scrollbar width */ }
+
+::-webkit-scrollbar-track {
+  background: #222;
+  /* Track background color */ }
+
+::-webkit-scrollbar-thumb {
+  background: #f2f2f0;
+  /* Thumb background color */
+  border-radius: 10px;
+  /* Rounded corners */ }
+
+/* Hover Effects (Optional) */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+  /* Darker thumb on hover */ }
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to top, rgba($color-primary, 0.96), rgba($color-secondary, .98)), url("/img/background.jpg")  fixed center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

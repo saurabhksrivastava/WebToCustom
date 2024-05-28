@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  color: $color-secondary;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.heading__1 {
+  @extend %heading-main;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+.heading__2 {
+  @extend %heading-secondary;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+}
+
+.heading__3 {
+  @extend %heading-secondary;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.light {
+  color: $color-white;
+}
+
+.dark {
+  color: $color-black;
+}
+
+.highlighted {
+  color: $color-secondary;
+  font-size: 4rem;
+  font-weight: 800;
+  position: relative;
+  padding: .5rem 1rem;
+  z-index: 2;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right top, $color-tertiary, $color-primary);
+    transition: all .1s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    height: 100%;
+
+  }
+}
+
+.short-para {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
