@@ -326,3 +326,20 @@ body {
       align-self: start;
       transform: translateX(-13rem);
       z-index: 2; }
+
+.errorBody {
+  background: linear-gradient(to right top, #F37402, #1333A7, #F34605, #F37402);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+#message {
+  width: 40%;
+  padding: 1em;
+  background: #fff;
+  color: #F34605;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem; }
