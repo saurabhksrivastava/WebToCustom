@@ -1,9 +1,9 @@
 .errorBody {
-  background: linear-gradient(to right top, $color-tertiary, $color-secondary, $color-primary, $color-tertiary);
+  background: linear-gradient(to right top, $color-tertiary, $color-secondary, $color-yellow, $color-tertiary);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  //position: relative;
 }
 
 #message {

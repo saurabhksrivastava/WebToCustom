@@ -328,11 +328,10 @@ body {
       z-index: 2; }
 
 .errorBody {
-  background: linear-gradient(to right top, #F37402, #1333A7, #F34605, #F37402);
+  background: linear-gradient(to right top, #F37402, #1333A7, #FFED05, #F37402);
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  position: relative; }
+  overflow: hidden; }
 
 #message {
   width: 40%;
